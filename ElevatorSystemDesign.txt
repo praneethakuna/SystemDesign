@@ -1,0 +1,51 @@
+requirements
+1.Three States of elevator -up,down,idle
+2.car moves from one floor to another
+3.Open doors only when it is in Idle State
+4.specs of car
+-no of passengers,maximum load,maximum speed
+5.Power usage- Minimise
+minimise wait time of passenger,system
+Increase throughput
+
+-we can divide the elevator cars based on operations like this elevators serve only till this floors or even or odd number floors etc
+
+-Objects in this design
+Actors
+Passenger
+Elevator Car
+doors
+button panel- every floor has button panel,and every car has button panel with number of floors,upper floor has only down elevator button,lower floor has only upward button
+floors
+dispatcher
+Elevator System-singelton actor
+Monitoring system
+
+-Use cases
+1.Calling the elevator car
+2.Move up or down or stop
+3.open door or close
+4.emergency break
+5.emergency call
+6.show direction in which it is going 
+7.display the floor number where it is now
+
+
+-button interface which has functions isPressed(),pressDown(),pressUp()
+there are two classes which implements button interface
+1.button pannel in every floor
+2.button panel in the car
+
+-Door class
+functions -open(),close(),isOpen()
+
+-Elevator motion interface
+move(destination floor), stop()
+
+we have interfaces for floors, for dipatcher system for monitoring system 
+
+Elevator system work on scheduling alogo
+-FCFS
+-shortest seek time first
+-scan algo
+-look(look ahead scan)
